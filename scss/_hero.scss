@@ -1,0 +1,124 @@
+.hero{
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    background-image: url("../image/header-bg.jpg");
+    background-size: cover;
+    padding: 162px 0 100px 0;
+    text-align: center;
+    &:before {
+        position: absolute;
+        content: "";
+        right: 55px;
+        bottom: 0;
+        background: url("../image/hero-img-bg.png") no-repeat;
+        height: 361px;
+        width: 621px;
+    }
+    &__wrap{
+        position: relative;
+        z-index: 2;
+    }
+    &__title{
+        font-size: 72px;
+        font-weight: bold;
+        color: #65c907;
+        line-height: 1;
+        margin-top: 60px;
+    }
+    &__subtitle{
+        font-size: 36px;
+        color: #0a95b3;
+        margin-top: 40px;
+    }
+    &__search {
+        position: relative;
+        margin-top: 40px;
+        font-size: 24px;
+        line-height: 1;
+        max-width: 626px;
+        width: 100%;
+        padding: 5px 70px 3px 20px;
+        border: 3px solid #fff;
+        border-radius: 7px;
+        outline: none;
+        background: rgba(255, 255, 255, 0.4);
+    }
+    &__search::-webkit-input-placeholder {
+        color: #65c907;
+    }
+
+    &__search::-moz-placeholder {
+        color: #65c907;
+    }
+
+    /* Firefox 19+ */
+    &__search:-moz-placeholder {
+        color: #65c907;
+    }
+
+    /* Firefox 18- */
+    &__search:-ms-input-placeholder {
+        color: #65c907;
+    }
+}
+
+.hero__search{
+    position: relative;
+}
+
+.hero__search:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    font-family: 'icomoon';
+    content: "\e986";
+    color: #65c907;
+}
+
+
+@media (max-width: 950px){
+    .hero{
+        overflow: hidden;
+        padding-top: 200px;
+        &__wrap{
+            padding-top: 10px;
+        }
+        &__subtitle{
+            font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: 790px) {
+    .hero{
+        &:before{
+            right: -200px;
+        }
+        &__title{
+            font-size: 48px;
+        }
+        &__subtitle {
+            font-size: 24px;
+            margin-top: 20px;
+            text-shadow: 1px 1px 1px #fff,
+        }
+        &__search{
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.8);
+        }
+    }
+}
+
+@media (max-width: 640px){
+     .hero {
+         min-height: 700px;
+         &__title {
+             font-size: 36px;
+         }
+         &__subtitle {
+             font-size: 16px;
+         }
+     }
+}

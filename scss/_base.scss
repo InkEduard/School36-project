@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+html,
+body{
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    font-family: 'Calibri';
+    font-weight: normal;
+    font-style: normal;
+    // font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #000;
+    line-height: 1;
+}
+
+textarea{
+    resize: none;
+}

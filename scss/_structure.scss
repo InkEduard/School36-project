@@ -1,0 +1,97 @@
+.structure{
+    min-height: 557px;
+    background: #65c907;
+    padding: 40px 0;
+    text-align: center;
+    color: #ffffff;
+    &__title{
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 48px;
+    }
+    &__text{
+        margin-top: 35px;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 24px;
+    }
+    &__text span{
+        display: block;
+    }
+    &__slide-title{
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 30px;
+        color: #0b5130;
+    }
+    &__slider-text {
+        margin-top: 20px;
+    }
+    &__slide-subtitle{
+        margin-top: 28px;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 24px;
+        color: #0b5130;
+    }
+    &__slider-subtext {
+        margin-top: 20px;
+    }
+    &__slider-text-last{
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        padding: 0 80px;
+    }
+    &__slider-text-last span{
+        margin-top: 80px;
+        font-size: 24px;
+    }
+    &__slider-inner{
+        padding: 0 40px;
+    }
+}
+
+.structure-slider{
+    padding: 30px 0;
+}
+
+.swiper-slide span{
+    display: block;
+    line-height: 24px;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background: #0b5130;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after{
+    color: #fff;
+}
+
+
+@media (max-width: 759px){
+    .structure{
+        padding-bottom: 10px;
+        &__title{
+            font-size: 36px;
+            line-height: 36px;
+        }
+        &__text {
+            margin-top: 35px;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 24px;
+        }
+        &__slider-text-last{
+            padding: 0 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        &__slider-text-last span{
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    }
+}

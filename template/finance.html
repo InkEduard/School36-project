@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./include/head.html')
+
+<body>
+    @@include('./include/header.html')
+
+    <section class="finance">
+        <div class="container">
+            <div class="finance__wrap">
+                <div class="finance__inner">
+                    <div class="finance__title">
+                        Прозорість
+                    </div>
+                    <div class="finance__list">
+                        <ul>
+                            <li><a href="https://drive.google.com/file/d/1r450oaB31JsJV6i8rXKZth3vJIYQEOnS/view">Звіт про надходження і використання коштів, отриманих як плата за послуги (форма№ 4-1д, № 4-1м), станом на 01.10.2019р.</a></li>
+                            <li><a href="https://drive.google.com/file/d/1Z8hv6JgBQ7p4nwGxwi5rBproLzG_u6sk/view">Звіт про надходження і використання коштів, отриманих за іншими джерелами власних надходжень (форма № 4-2д, № 4-2м)
+                            станом на 01.10.2019 р.</a></li>
+                            <li><a href="https://drive.google.com/file/d/0B-wRCE53wgh7VU9oRjZBMWhhcEx4NnIyUTd0X3pvVlpURFdZ/view">ЗВІТ про надходження і використання коштів, отриманих як плата за послуги (форма№ 4-1д, № 4-1м), станом на 01.10.2018р.</a></li>
+                            <li><a href="https://drive.google.com/file/d/0B-wRCE53wgh7TGNEbHJoWjlBTEZHcWZzdThRbHJzU0F1SnZ3/view">ЗВІТ про надходження і використання коштів загального фонду (форма№ 4-3д, № 4-3м), станом на 01.10.2018р.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    @@include('./include/footer.html')
+
+    <div class="registration">
+        <div class="container">
+            <div class="registration__wrap">
+                <div class="registration__inner">
+                    <div class="registration__title">
+                        Реєстрація
+                    </div>
+                    <form action="">
+                        <label for="email">Електронная пошта</label>
+                        <input type="text" placeholder="Введіть електронну пошту" name="email" required>
+
+                        <label for="psw">Пароль</label>
+                        <input type="password" placeholder="Введіть пароль" name="psw" required>
+
+                        <label for="psw-repeat">Повторіть пароль</label>
+                        <input type="password" placeholder="Введіть пароль" name="psw-repeat" required>
+                        <button type="submit" class="registration-btn">Продовжити</button>
+                    </form>
+                    <span class="registerform-close"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="login">
+        <div class="container">
+            <div class="login__wrap">
+                <div class="login__inner">
+                    <div class="login__title">
+                        Вхід
+                    </div>
+                    <form action="">
+                        <label for="email">Електронная пошта</label>
+                        <input type="text" placeholder="Введіть електронну пошту" name="email" required>
+
+                        <label for="psw">Пароль</label>
+                        <input type="password" placeholder="Введіть пароль" name="psw" required>
+
+                        <button type="submit" class="login-btn">Продовжити</button>
+                    </form>
+                    <span class="loginform-close"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/all.js"></script>
+</body>
+
+</html>

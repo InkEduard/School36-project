@@ -1,0 +1,86 @@
+.info-one{
+    min-height: 968px;
+    padding: 40px 0 50px 0;
+    &__wrap{
+        position: relative;
+    }
+    &__wrap:before{
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: "";
+        background-image: url("../image/info-one-blazon.jpg");
+        width: 412px;
+        height: 412px;
+    }
+    &__title{
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 48px;
+        max-width: 705px;
+    }
+    &__word-blue{
+        color: #005bbb;
+    }
+    &__word-yellow{
+        color: #ffd500;
+    }
+    &__subtitle{
+        margin-top: 45px;
+        font-size: 30px;
+        line-height: 36px;
+        max-width: 644px;
+    }
+    &__text{
+        margin-top: 30px;
+    }
+    &__text ul{
+        margin: 0;
+        padding: 0;
+    }
+    &__text li{
+        margin: 0 0 22px 0;
+        padding: 0;
+        list-style: none;
+        line-height: 20px;
+
+    }
+}
+
+.number-of-students{
+    margin-top: 45px;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.number-of-students span{
+    font-weight: bold;
+}
+
+@media (max-width: 1159px){
+    .info-one{
+        &__wrap:before {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 759px){
+    .info-one{
+        &__title{
+            font-size: 36px;
+            line-height: 36px;
+        }
+        &__subtitle{
+            font-size: 20px;
+        }
+        .number-of-students{
+            font-size: 24px;
+        }
+        &__title,
+        .number-of-students,
+        &__subtitle{
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.gallery{
+    padding: 162px 0 40px 0;
+    min-height: 100vh;
+    &__wrap{
+        width: 100%;
+        height: 100%;
+    }
+    &__title {
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 40px;
+        color: #0b5130;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__item{
+        border-radius: 7px;
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        color: #fff;
+    }
+    &__slider-photo{
+        width: 100%;
+        min-height: 300px;
+    }
+}

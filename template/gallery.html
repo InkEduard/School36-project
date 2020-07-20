@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./include/head.html')
+
+<body>
+    @@include('./include/header.html')
+
+<section class="gallery">
+    <div class="container">
+        <div class="gallery__wrap">
+            <div class="gallery__title">
+                Фотогалерея
+            </div>
+            <div class="gallery__inner">
+                    <div class="gallery__item">
+                        <div id="gallery-slider" class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide gallery-slider-item">
+                                    <div class="allery__slider-title">
+                                        1 клас
+                                    </div>
+                                    <div class="allery__slider-img">
+                                        <img class="allery__slider-photo" src="../image/gallery-klas-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide gallery-slider-item">
+                                    <div class="allery__slider-title">
+                                        2 клас
+                                    </div>
+                                    <div class="allery__slider-img">
+                                        <img class="allery__slider-photo" src="../image/gallery-klas-2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide gallery-slider-item">
+                                    <div class="allery__slider-title">
+                                        3 клас
+                                    </div>
+                                    <div class="allery__slider-img">
+                                        <img class="allery__slider-photo" src="../image/gallery-klas-3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide gallery-slider-item">
+                                    <div class="allery__slider-title">
+                                        4 клас
+                                    </div>
+                                    <div class="allery__slider-img">
+                                        <img src="../image/gallery-klas-4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide gallery-slider-item">
+                                    <div class="allery__slider-title">
+                                        5 клас
+                                    </div>
+                                    <div class="allery__slider-img">
+                                        <img src="../image/gallery-klas-5.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide gallery-slider-item">
+                                    <div class="allery__slider-title">
+                                        6 клас
+                                    </div>
+                                    <div class="allery__slider-img">
+                                        <img src="../image/gallery-klas-6.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide gallery-slider-item">
+                                    <div class="allery__slider-title">
+                                        7 клас
+                                    </div>
+                                    <div class="allery__slider-img">
+                                        <img src="../image/gallery-klas-7.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide gallery-slider-item">
+                                    <div class="allery__slider-title">
+                                        8 клас
+                                    </div>
+                                    <div class="allery__slider-img">
+                                        <img src="../image/gallery-klas-8.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide gallery-slider-item">
+                                    <div class="allery__slider-title">
+                                        9 клас
+                                    </div>
+                                    <div class="allery__slider-img">
+                                        <img src="../image/gallery-klas-9.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide gallery-slider-item">
+                                    <div class="allery__slider-title">
+                                        10 клас
+                                    </div>
+                                    <div class="allery__slider-img">
+                                        <img src="../image/gallery-klas-10.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide gallery-slider-item">
+                                    <div class="allery__slider-title">
+                                        11 клас
+                                    </div>
+                                    <div class="allery__slider-img">
+                                        <img src="../image/gallery-klas-11.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>  
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    @@include('./include/footer.html')
+
+<div class="registration">
+    <div class="container">
+        <div class="registration__wrap">
+            <div class="registration__inner">
+                <div class="registration__title">
+                    Реєстрація
+                </div>
+                <form action="">
+                    <label for="email">Електронная пошта</label>
+                    <input type="text" placeholder="Введіть електронну пошту" name="email" required>
+
+                    <label for="psw">Пароль</label>
+                    <input type="password" placeholder="Введіть пароль" name="psw" required>
+
+                    <label for="psw-repeat">Повторіть пароль</label>
+                    <input type="password" placeholder="Введіть пароль" name="psw-repeat" required>
+                    <button type="submit" class="registration-btn">Відправити</button>
+                </form>
+                <span class="registerform-close"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="login">
+    <div class="container">
+        <div class="login__wrap">
+            <div class="login__inner">
+                <div class="login__title">
+                    Вхід
+                </div>
+                <form action="">
+                    <label for="email">Електронная пошта</label>
+                    <input type="text" placeholder="Введіть електронну пошту" name="email" required>
+
+                    <label for="psw">Пароль</label>
+                    <input type="password" placeholder="Введіть пароль" name="psw" required>
+
+                    <button type="submit" class="login-btn">Продовжити</button>
+                </form>
+                <span class="loginform-close"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/all.js"></script>
+</body>
+
+</html>

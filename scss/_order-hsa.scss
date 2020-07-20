@@ -1,0 +1,39 @@
+.order-hsa {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+    z-index: 200;
+    color: #65c907;
+    display: none;
+    &__wrap {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 1200px;
+        width: 100%;
+        height: 90vh;
+        margin: 0 auto;
+        background: #fff;
+        padding: 30px;
+        border-radius: 7px;
+        overflow: scroll;
+    }
+}
+
+.document-img{
+    max-width: 1140px;
+    width: 100%;
+}
+
+.order-hsa-active {
+    display: block;
+    transition: 3s;
+}
+
+.order-hsa-none {
+    display: none;
+}

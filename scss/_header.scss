@@ -1,0 +1,215 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 162px;
+    width: 100%;
+    &__wrap{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        height: 162px;
+    }
+    &__inner-nav{
+        position: relative;
+        width: 100%;
+    }
+    &__nav{
+        position: fixed;
+        top: 0;
+        left: 3%;
+        width: 577px;
+        height: 582px;
+        padding: 30px 49px;
+        background: url("../image/header-nav-bg.png") no-repeat;
+        background-size: cover;
+        transform: translate(0, -470px); //было 429пх
+        transition: .3s;
+    }
+    .header__nav-active {
+        transform: translate(0, 0);
+        transition: .3s;
+    }
+    .nav-menu {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .nav-menu li {
+        list-style: none;
+        margin-bottom: 23px;
+        line-height: 1;
+    }
+    .nav-menu a{
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .nav-menu a:hover{
+        color: #65c907;
+    }
+    &__nav-down {
+        padding-top: 50px;
+    }
+    &__nav-title {
+        font-size: 60px;
+        font-weight: bold;
+    }
+    .nav-logo{
+        color: #fff;
+        text-decoration: none;
+        line-height: 50px;
+    }
+    .nav-logo:hover{
+        color: #65c907;
+    }
+    &__data{
+        display: block;
+        font-size: 20px;
+        color: #0a95b3;
+    }
+    &__nav-btn{
+        position: absolute;
+        bottom: 39px;
+        right: 46px;
+        height: 67px;
+        width: 46px;
+        background: url("../image/open-menu.png") no-repeat;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+    .header__nav-btn-active{
+        background: url("../image/close-menu.png") no-repeat;
+    }
+
+    &__login{
+        font-family: 'Calibri';
+        position: relative;
+        margin-top: 70px;
+        width: 213px;
+        height: 43px;
+        background: #0b5130;
+        border-radius: 7px;
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 13px 3px 13px;
+    }
+    // &__login:before{
+    //     position: absolute;
+    //     content: "";
+    //     top: 8px;
+    //     left: 59px;
+    //     width: 3px;
+    //     height: 27px;
+    //     background: #fff;
+    // }
+    &__login-btn{
+        background: none;
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        line-height: 18px;
+        padding: 0;
+        font-family: 'Calibri';
+    }
+    &__login-btn:hover{
+        color: #65c907;
+    }
+}
+
+
+@media (max-width: 950px){
+    .header{
+        min-height: 200px;
+        &__nav{
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -429px);
+            max-width: 577px;
+            z-index: 5;
+        }
+        &__nav-active {
+            position: fixed;
+            top: 0 !important;
+            left: 50% !important;
+            transform: translate(-50%, 0) !important;
+        }
+        &__wrap{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+        &__login{
+            width: 190px;
+            margin: 180px auto 0 auto;
+        }
+    }
+}
+
+@media (max-width: 640px){
+    .header {
+        min-height: 200px;
+        &__nav{
+            width: 477px;
+            height: 482px;
+            transform: translate(-50%, -360px);
+            padding: 30px 35px;
+        }
+        &__nav-active {
+            left: 50% !important;
+            transform: translate(-50%, 0) !important;
+        }
+        .nav-menu li {
+            margin-bottom: 13px;
+        }
+        &__login {
+            margin: 140px auto 0 auto;
+        }
+    }
+}
+
+@media (max-width: 510px){
+    .header {
+        min-height: 200px;
+        &__inner-nav {
+            display: flex;
+            justify-content: center;
+        }
+        &__nav {
+            width: 400px;
+            height: 405px;
+            transform: translate(-50%, -315px);
+        }
+        &__nav-active {
+            left: 50% !important;
+            transform: translate(-50%, 0) !important;
+        }
+        .nav-menu li {
+            margin-bottom: 13px;
+        }
+        &__nav-title{
+            font-size: 48px;
+        }
+        &__nav-down{
+            padding-top: 0;
+        }
+        .nav-logo{
+            font-size: 36px;
+            line-height: 36px;
+        }
+        &__data{
+            margin-top: -5px;
+        }
+        &__nav-btn {
+            bottom: 20px;
+        }
+    }
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./include/head.html')
+
+<body>
+    @@include('./include/header.html')
+
+    <section class="education">
+        <div class="container">
+            <div class="education__wrap">
+                <div class="education__inner">
+                    <div class="education__title">
+                        Виховна робота
+                    </div>
+                    <div class="education__list">
+                        <div class="education__list-item">
+                            <div class="education__item-title">
+                                До дня Української писемності діти розповіли вірші про Україну та написали слова українських письменників про
+                                Батьківщину.
+                            </div>
+                            <div class="education__item-video">
+                                <video controls id="video-player" width="100%" height="100%"> 
+                                    <source  src="../video/Den-sobornosti.mp4" type="video/mp4">
+                                </video>
+
+                                <!-- Начало навигации видео -->
+                                <!-- <div class="education__video-nav">
+                                    <div class="video-wrap">
+                                        <div class="play-btn"><button id="play"></button></div>
+                                        <div class="pause-btn"><button id="pause"></button></div>
+                                        <div class="progress-bar">
+                                            <progress class="progress" id="progress" max="100" value="0" style="width: 100%;"></progress>
+                                            <div class="out">
+                                                <p class="out-bar" id="out">0</p>
+                                            </div>
+                                        </div>
+                                        <div class="stop-btn"><button id="stop">Stop</button></div>
+                                        <div class="speed-up"><button id="quickly">quickly</button></div>
+                                        <div class="speed-down"><button id="slow">slow</button></div>
+                                        <div class="speed-normal"><button id="speed-normal">normal</button></div>
+                                        <div class="range"><input class="volume-btn" type="range" id="volume" min="0" max="100" value="25"></div>
+                                    </div>
+                                </div> -->
+                            </div>
+
+                            <!-- начало слайдера -->
+
+                            <div class="swiper-container" id="education-slider">
+                                <div class="swiper-wrapper education__swiper-wrappe">
+                                    <div class="swiper-slide">
+                                        <div class="education__item-video">
+                                            <video controls width="100%" min-height="300">
+                                                <source src="../video/den-sob-video2.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="education__item-video">
+                                            <video controls width="100%" min-height="300">
+                                                <source src="../video/den-sob-video3.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="education__item-video">
+                                            <video controls width="100%" min-height="300">
+                                                <source src="../video/den-sob-video4.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="education__item-video">
+                                            <video controls width="100%" min-height="300">
+                                                <source src="../video/den-sob-video5.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="education__item-video">
+                                            <video controls width="100%" min-height="300">
+                                                <source src="../video/den-sob-video2.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="education__item-video">
+                                            <video controls width="100%" min-height="300">
+                                                <source src="../video/den-sob-video3.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="education__item-video">
+                                            <video controls width="100%" min-height="300">
+                                                <source src="../video/den-sob-video4.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="education__item-video">
+                                            <video controls width="100%" min-height="300">
+                                                <source src="../video/den-sob-video5.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination"></div>
+                            </div>
+
+                            <!-- конец слайдера -->
+
+                            <!-- <div id="education-slider" class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="swiper-zoom-container">
+                                            <div class="education__item-video">
+                                                <video controls width="100%" min-height="300">
+                                                    <source src="../video/den-sob-video2.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-zoom-container">
+                                            <div class="education__item-video">
+                                                <video controls width="100%" min-height="300">
+                                                    <source src="../video/den-sob-video3.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-zoom-container">
+                                            <div class="education__item-video">
+                                                <video controls width="100%" min-height="300">
+                                                    <source src="../video/den-sob-video4.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-zoom-container">
+                                            <div class="education__item-video">
+                                                <video controls width="100%" min-height="300">
+                                                    <source src="../video/den-sob-video5.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>-->
+                                <!-- Add Pagination -->
+                                <!-- <div class="swiper-pagination swiper-pagination-white"></div> -->
+                                <!-- Add Navigation -->
+                                <!-- <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div> -->
+                            </div> 
+                        </div>
+                        <div class="education__list-item"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    @@include('./include/footer.html')
+
+    <div class="registration">
+        <div class="container">
+            <div class="registration__wrap">
+                <div class="registration__inner">
+                    <div class="registration__title">
+                        Реєстрація
+                    </div>
+                    <form action="">
+                        <label for="email">Електронная пошта</label>
+                        <input type="text" placeholder="Введіть електронну пошту" name="email" required>
+
+                        <label for="psw">Пароль</label>
+                        <input type="password" placeholder="Введіть пароль" name="psw" required>
+
+                        <label for="psw-repeat">Повторіть пароль</label>
+                        <input type="password" placeholder="Введіть пароль" name="psw-repeat" required>
+                        <button type="submit" class="registration-btn">Продовжити</button>
+                    </form>
+                    <span class="registerform-close"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="login">
+        <div class="container">
+            <div class="login__wrap">
+                <div class="login__inner">
+                    <div class="login__title">
+                        Вхід
+                    </div>
+                    <form action="">
+                        <label for="email">Електронная пошта</label>
+                        <input type="text" placeholder="Введіть електронну пошту" name="email" required>
+
+                        <label for="psw">Пароль</label>
+                        <input type="password" placeholder="Введіть пароль" name="psw" required>
+
+                        <button type="submit" class="login-btn">Продовжити</button>
+                    </form>
+                    <span class="loginform-close"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/all.js"></script>
+</body>
+
+</html>

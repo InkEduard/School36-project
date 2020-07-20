@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./include/head.html')
+
+<body>
+@@include('./include/header.html')
+
+<section class="about">
+    <div class="container">
+        <div class="about__wrap">
+            <div class="about__inner">
+                <div class="about__item about__item1">
+                    <img class="about__img" src="../image/info-two-school.png" alt="">
+                </div>
+                <div class="about__item about__item2">
+                    <div class="about__title">
+                        Про школу
+                    </div>
+                    <div class="about__text">
+                        <p>
+                            Вітаємо на сайті нашої школи №36 м. Запоріжжя – сучасного
+                            навчального закладу, що є світом знань, гармонії та любові, в якому приємно вчитись і працювати. За всю історію
+                            свого
+                            існування педагоги школи з честю виконували свій обов’язок – навчати і виховувати, формувати
+                            різнобічно розвинену і соціально активну особистість. Педагогічний колектив допомагає учням не тільки здобути
+                            міцні
+                            знання, а ще відкриває чарівний світ науки та знань, робить все для того, щоб шкільні роки промайнули з радістю
+                            та
+                            приємними згадками про спортивні свята, подорожі, веселі хвилини позакласного життя, захопливі миті відкриттів
+                            та
+                            наукової роботи. Активна співпраця адміністрації школи, педагогічного колективу, учнівського
+                            самоврядування, загальношкільної батьківської ради забезпечує успішне вирішення цих завдань. Маємо надію, що
+                            відвідувачі
+                            сайту знайдуть на його сторінках багато корисної і цікавої інформації, дізнаються про історію і сьогодення
+                            школи, про
+                            досягнення, організацію навчального процесу і громадське життя і, звичайно, про людей, які тут працюють і
+                            навчаються.
+                        </p>
+                    </div>
+                    <a class="about__link" href="../doc/report2017.ppt">Звітування директора школи за підсумками 2016-2017 навчального року
+                        Татарової Ірини Іванівни</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@@include('./include/footer.html')
+
+<div class="registration">
+    <div class="container">
+        <div class="registration__wrap">
+            <div class="registration__inner">
+                <div class="registration__title">
+                    Реєстрація
+                </div>
+                <form action="">
+                    <label for="email">Електронная пошта</label>
+                    <input type="text" placeholder="Введіть електронну пошту" name="email" required>
+
+                    <label for="psw">Пароль</label>
+                    <input type="password" placeholder="Введіть пароль" name="psw" required>
+
+                    <label for="psw-repeat">Повторіть пароль</label>
+                    <input type="password" placeholder="Введіть пароль" name="psw-repeat" required>
+                    <button type="submit" class="registration-btn">Продовжити</button>
+                </form>
+                <span class="registerform-close"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="login">
+    <div class="container">
+        <div class="login__wrap">
+            <div class="login__inner">
+                <div class="login__title">
+                    Вхід
+                </div>
+                <form action="">
+                    <label for="email">Електронная пошта</label>
+                    <input type="text" placeholder="Введіть електронну пошту" name="email" required>
+
+                    <label for="psw">Пароль</label>
+                    <input type="password" placeholder="Введіть пароль" name="psw" required>
+
+                    <button type="submit" class="login-btn">Продовжити</button>
+                </form>
+                <span class="loginform-close"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/all.js"></script>
+</body>
+</html>

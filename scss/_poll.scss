@@ -1,0 +1,204 @@
+.poll{
+    min-height: 764px;
+    background: #65c907;
+    padding-top: 40px;
+    color: #fff;
+    &__wrap{
+        min-height: 674px;
+        position: relative;
+    }
+    &__title{
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 36px;
+        color: #ffffff;
+        text-align: center;
+    }
+    // &__slider{
+    //     padding: 90px 82px 60px 108px;
+    //     min-height: 598px;
+    //     max-width: 1170px;
+    //     width: 100%;
+    //     background: url("../image/poll-slider.png");
+    //     background-repeat: no-repeat;
+    //     text-align: center;
+    //     font-size: 18px;
+    // }
+    &__slider-bg{
+        padding: 90px 108px 60px 108px;
+        min-height: 598px;
+        max-width: 1170px;
+        background: url("../image/poll-slider.png");
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+    &__slider-title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    &__slider-title span{
+        margin-top: 15px;
+    }
+    &__slider-radio {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 38px;
+    }
+    &__slider-radio label{
+        width: 43%;
+        text-align: left;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &__slider-radio input[type="radio"] {
+        margin-right: 30px;
+        height: 36px;
+        width: 36px;
+    }
+    &__btn{
+        background: #fff;
+        text-transform: uppercase;
+        color: #0b5130;
+        border: none;
+        border-radius: 7px;
+        padding: 19px 26px 13px 26px;
+        padding-top: 1p9px;
+        padding-bottom: 13x;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+        position: absolute;
+        bottom: 60px;
+        right: 81px;
+        outline: none;
+    }
+    &__btn:hover{
+        background: #d8d8d8;
+    }
+}
+
+//стилизация радио
+
+input[type=radio]+label{
+    cursor: pointer;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio]+label:before {
+    content: "\ea10";
+    font-family: 'icomoon';
+    border: 3px solid #fff;
+    border-radius: 7px;
+    display: block;
+    color: #65c907;
+    font-size: 36px;
+    line-height: 36px;
+    margin: -5px 5px 0 0;
+    height: 36px;
+    width: 36px;
+    font-size: 0;
+    transition: font-size ease .3s;
+}
+
+input[type=radio]:checked+label:before {
+    font-size: 36px;
+}
+
+.poll__radio-one{
+    display: flex;
+    max-width: 460px;
+    width: 100%;
+}
+
+// закончил стилизировать радио
+
+@media (max-width: 1219px){
+    .poll{
+        &__slider-bg{
+            background: #0b5130;
+            border-radius: 7px;
+        }
+        &__btn {
+            border-radius: 0 0 7px 7px;
+            width: 100%;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+        }
+        .poll__radio-one {
+            max-width: 120px;
+        }
+    }
+}
+
+@media (max-width: 844px){
+    .poll {
+        &__slider-radio {
+            max-width: 500px;
+            width: 100%;
+            margin: 38px auto 0 auto;
+        }
+    }
+}
+
+@media (max-width: 824px){
+    .poll {
+        padding-bottom: 40px;
+        &__slider-bg {
+            background: #0b5130;
+            text-align: center;
+            padding: 70px 50px 80px 50px;
+        }
+    }
+}
+
+@media (max-width: 759px) {
+    .poll {
+        &__title {
+            font-size: 36px;
+            line-height: 36px;
+        }
+    }
+}
+
+@media (max-width: 608px){
+    .poll {
+        &__slider-radio {
+            max-width: 365px;
+            width: 100%;
+            margin: 38px auto 0 auto;
+        }
+    }
+}
+
+@media (max-width: 510px){
+    .poll__slider .swiper-slide .swiper-slide-duplicate .swiper-slide-active{
+        max-width: 1170px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 488px){
+    .poll {
+        &__slider-radio {
+            max-width: 250px;
+            width: 100%;
+            margin: 38px auto 0 auto;
+        }
+    }
+}
+
+@media (max-width: 368px){
+    .poll{
+        &__slider-radio{
+            flex-direction: column;
+        }
+    }
+}

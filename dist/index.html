@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Запорізька загальноосвітня школа №36</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header" id="header-top">
+    <div class="container">
+        <div class="header__wrap">
+            <div class="header__inner-nav">
+                <nav class="header__nav">
+                    <ul class="nav-menu">
+                        <li><a href="../index.html">Головна сторінка</a></li>
+                        <li><a href="../about.html">Про навчальний заклад</a></li>
+                        <li><a href="../finance.html">прозорість</a></li>
+                        <li><a href="../education.html">виховна робота</a></li>
+                        <li><a href="../feedback.html">зворотній зв’язок</a></li>
+                        <li><a href="../gallery.html">фотогалерея</a></li>
+                        <li><a href="#">ЗНО 2020</a></li>
+                        <li><a href="#">новини</a></li>
+                        <li><a href="#">поради психолога</a></li>
+                    </ul>
+                    <div class="header__nav-down">
+                        <div class="header__nav-title">
+                            <a href="../index.html" class="nav-logo">ЗЗОШ №36</a>
+                            <span class="header__data">
+                                <script language="javascript" type="text/javascript">
+                                    var d = new Date();
+
+                                    var day = new Array("Неділя,", "Понеділок,", "Вівторок,",
+                                        "Середа,", "Четверг,", "П'ятніця,", "Субота,");
+
+                                    var month = new Array("січня", "лютого", "березеня", "квітня", "травня", "червня",
+                                        "липня", "серпня", "вересняя", "жовтня", "листопада", "грудня");
+
+                                    document.write(day[d.getDay()] + " " + d.getDate() + " " + month[d.getMonth()]
+                                        + " " + d.getFullYear() + " р.");</script>
+                            </span>
+                        </div>
+                        <button class="header__nav-btn"></button>
+                    </div>
+                </nav>
+            </div>
+            <div class="header__login">
+                <button class="header__login-btn header__login-entrance login-form">вхід</button>
+                <button class="header__login-btn header__login-registration registration-form">реєстрація</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <div class="hero__wrap">
+            <div class="hero__title">
+                Ласкаво просимо!
+            </div>
+            <div class="hero__subtitle">
+                ЗАПОРІЗЬКА ЗАГАЛЬНООСВІТНЯ ШКОЛА І-ІІІ СТУПЕНІВ № 36
+                <br>ЗАПОРІЗЬКОЇ МІСЬКОЇ РАДИ ЗАПОРІЗЬКОЇ ОБЛАСТІ
+            </div>
+            <input type="text" class="hero__search" placeholder="ПОШУК">
+        </div>
+    </div>
+</section>
+
+<section class="doc">
+    <div class="container">
+        <div class="doc__wrap">
+            <div class="doc__inner">
+                <div class="doc__main">
+                    <span class="doc__first-word">Школа</span> - це майстерня, де формується думка
+                    підростаючого покоління, треба міцно тримати її
+                    в руках, якщо не хочеш випустити з рук майбутнє.
+                    <span class="doc__main-author">А. Барбюс</span>
+                </div>
+                <div class="doc__list">
+                    <ul>
+                        <li><a href="../doc/Osvіtnya-programa.docx">
+                            ОСВІТНЯ ПРОГРАМА Запорізької загальноосвітньої школи І-ІІІ ступені № 36
+                            Запорізької міської ради Запорізької області
+                        </a>
+                        </li>
+                        <li><a href="../doc/school-statute.doc">
+                            СТАТУТ ЗЗОШ № 36
+                        </a>
+                        </li>
+                        <li><a href="../doc/order.pdf">
+                            Свідотство про державну реєстрацію школи
+                        </a>
+                        </li>
+                        <li><a href="../doc/order.pdf">
+                            Н А К А З про результати державної атестації ЗЗОШ № 36
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="doc__btn">Розпорядження голови державної адміністрації</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="poll">
+    <div class="container">
+        <div class="poll__wrap">
+            <div class="poll__title">
+                Наше опитування
+            </div>
+            <div id="poll-slider" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="poll__slider swiper-slide">
+                        <div class="poll__slider-bg">
+                            <div class="poll__slider-title">
+                                Який клас у вишиванках найкращий?
+                                <span>Оберіть свій варіант</span>
+                            </div>
+                            <form action="">
+                                <div class="poll__slider-radio">
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-1" name="radio">
+                                        <label class="radio-one-label" for="radio-1">1 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-2" name="radio">
+                                        <label for="radio-2">2 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3" name="radio">
+                                        <label for="radio-3">3 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-4" name="radio">
+                                        <label for="radio-4">4 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-5" name="radio">
+                                        <label for="radio-5">5 клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-6" name="radio">
+                                        <label for="radio-6">6 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-7" name="radio">
+                                        <label for="radio-7">7 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-8" name="radio">
+                                        <label for="radio-8">8 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-9" name="radio">
+                                        <label for="radio-9">9 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-10" name="radio">
+                                        <label for="radio-10">10 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-11" name="radio">
+                                        <label for="radio-11">11 Клас</label>
+                                    </div>
+                                </div>
+                                <button class="poll__btn">відправити</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="poll__slider swiper-slide">
+                        <div class="poll__slider-bg">
+                            <div class="poll__slider-title">
+                                Який клас найкраще виступив на новий рік?
+                                <span>Оберіть свій варіант</span>
+                            </div>
+                            <form action="">
+                                <div class="poll__slider-radio">
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio1" name="radio">
+                                        <label for="radio1">1 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio2" name="radio">
+                                        <label for="radio2">2 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio3" name="radio">
+                                        <label for="radio3">3 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio4" name="radio">
+                                        <label for="radio4">4 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio5" name="radio">
+                                        <label for="radio5">5 клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio6" name="radio">
+                                        <label for="radio6">6 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio7" name="radio">
+                                        <label for="radio7">7 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio8" name="radio">
+                                        <label for="radio8">8 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio9" name="radio">
+                                        <label for="radio9">9 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio10" name="radio">
+                                        <label for="radio10">10 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio11" name="radio">
+                                        <label for="radio11">11 Клас</label>
+                                    </div>
+                                </div>
+                                <button class="poll__btn">відправити</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="poll__slider swiper-slide">
+                        <div class="poll__slider-bg">
+                            <div class="poll__slider-title">
+                                Який клас найкраще виступив на 8 березня?
+                                <span>Оберіть свій варіант</span>
+                            </div>
+                            <form action="">
+                                <div class="poll__slider-radio">
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3-1" name="radio">
+                                        <label for="radio-3-1">1 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3-2" name="radio">
+                                        <label for="radio-3-2">2 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3-3" name="radio">
+                                        <label for="radio-3-3">3 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3-4" name="radio">
+                                        <label for="radio-3-4">4 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3-5" name="radio">
+                                        <label for="radio-3-5">5 клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3-6" name="radio">
+                                        <label for="radio-3-6">6 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3-7" name="radio">
+                                        <label for="radio-3-7">7 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3-8" name="radio">
+                                        <label for="radio-3-8">8 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3-9" name="radio">
+                                        <label for="radio-3-9">9 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3-10" name="radio">
+                                        <label for="radio-3-10">10 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3-11" name="radio">
+                                        <label for="radio-3-11">11 Клас</label>
+                                    </div>
+                                </div>
+                                <button class="poll__btn">відправити</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <section class="poll">
+    <div class="container">
+        <div class="poll__wrap">
+            <div class="poll__title">
+                Наше опитування
+            </div>
+            <div id="poll-slider" class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="poll__slider swiper-slide">
+                        <div class="poll__slider-bg">
+                            <div class="poll__slider-title">
+                                Який клас у вишиванках найкращий?
+                                <span>Оберіть свій варіант</span>
+                            </div>
+                            <form action="">
+                                <div class="poll__slider-radio">
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-1" name="radio">
+                                        <label class="radio-one-label" for="radio-1">1 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-2" name="radio">
+                                        <label for="radio-2">2 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3" name="radio">
+                                        <label for="radio-3">3 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-4" name="radio">
+                                        <label for="radio-4">4 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-5" name="radio">
+                                        <label for="radio-5">5 клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-6" name="radio">
+                                        <label for="radio-6">6 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-7" name="radio">
+                                        <label for="radio-7">7 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-8" name="radio">
+                                        <label for="radio-8">8 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-9" name="radio">
+                                        <label for="radio-9">9 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-10" name="radio">
+                                        <label for="radio-10">10 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-11" name="radio">
+                                        <label for="radio-11">11 Клас</label>
+                                    </div>
+                                </div>
+                                <button class="poll__btn">відправити</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="poll__slider swiper-slide">
+                        <div class="poll__slider-bg">
+                            <div class="poll__slider-title">
+                                Який клас найкраще виступив на новий рік?
+                                <span>Оберіть свій варіант</span>
+                            </div>
+                            <form action="">
+                                <div class="poll__slider-radio">
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio1" name="radio">
+                                        <label for="radio1">1 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio2" name="radio">
+                                        <label for="radio2">2 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio3" name="radio">
+                                        <label for="radio3">3 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio4" name="radio">
+                                        <label for="radio4">4 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio5" name="radio">
+                                        <label for="radio5">5 клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio6" name="radio">
+                                        <label for="radio6">6 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio7" name="radio">
+                                        <label for="radio7">7 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio8" name="radio">
+                                        <label for="radio8">8 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio9" name="radio">
+                                        <label for="radio9">9 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio10" name="radio">
+                                        <label for="radio10">10 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio11" name="radio">
+                                        <label for="radio11">11 Клас</label>
+                                    </div>
+                                </div>
+                                <button class="poll__btn">відправити</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="poll__slider swiper-slide">
+                        <div class="poll__slider-bg">
+                            <div class="poll__slider-title">
+                                Який клас найкраще виступив на 8 березня?
+                                <span>Оберіть свій варіант</span>
+                            </div>
+                            <form action="">
+                                <div class="poll__slider-radio">
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3-1" name="radio">
+                                        <label for="radio-3-1">1 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3-2" name="radio">
+                                        <label for="radio-3-2">2 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3-3" name="radio">
+                                        <label for="radio-3-3">3 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3-4" name="radio">
+                                        <label for="radio-3-4">4 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3-5" name="radio">
+                                        <label for="radio-3-5">5 клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3-6" name="radio">
+                                        <label for="radio-3-6">6 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3-7" name="radio">
+                                        <label for="radio-3-7">7 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3-8" name="radio">
+                                        <label for="radio-3-8">8 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3-9" name="radio">
+                                        <label for="radio-3-9">9 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3-10" name="radio">
+                                        <label for="radio-3-10">10 Клас</label>
+                                    </div>
+                                    <div class="poll__radio-one">
+                                        <input type="radio" id="radio-3-11" name="radio">
+                                        <label for="radio-3-11">11 Клас</label>
+                                    </div>
+                                </div>
+                                <button class="poll__btn">відправити</button>
+                            </form>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Add Pagination -->
+                <!-- <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<section class="info-one">
+    <div class="container">
+        <div class="info-one__wrap">
+            <div class="info-one__title">
+                У навчальному закладі навчання
+                відбувається <span class="info-one__word-blue">українською</span> <span class="info-one__word-yellow">мовою</span>
+            </div>
+            <div class="number-of-students">
+                Фактична кількість учнів:
+                <span>213</span>
+            </div>
+            <div class="info-one__subtitle">
+                Теріторія обслуговування, закріплена за закладом
+                освіти його засновником:
+            </div>
+            <div class="info-one__text">
+                <ul>
+                    <li>вул. Автобусна: 1, 2, 3, 5, 7, 13, 21, 23, 25, 27, 29, 31.</li>
+                    <li>вул. Армавірська: 1а, 1-16, 18а, 18, 20.</li>
+                    <li>вул. Билкіна: 3, 4, 5, 6, 7, 8, 10, 11, 12, 14-22, 24, ,26, 28-34, 36б, 36.</li>
+                    <li>пр. Водовертна: 3, 5, 7, 9, 10, 11, 12.</li>
+                    <li>вул. Горобинова: 1, 2, 3а, 3-7, 9-10, 11а, 11б, 11, 12, 14.</li>
+                    <li>вул. Електрична: 1а, 1б, 1в, 1, 2а, 2-10, 11а, 11-23, 24а, 24-27, 28а, 29-37, 38а, 38-50, 51а, 51, 52, 53, 54, 55, 56,
+                    57, 58, 59, 60, 61, 62, 63а, 63-70.</li>
+                    <li>вул. Кустанайська: 1, 3-8, 10, 12, 14.</li>
+                    <li>вул. Літературна: 1, 2а, 2, 3а, 3-7, 8а, 8-13, 14а, 14-15, 16а, 16, 23, 24а, 24-29, 30а, 30-48, 51-69, 70.</li>
+                    <li>вул. Магнітна: 1, 3, 4, 5, 6, 7, 8.</li>
+                    <li>вул. Машинна: 1, 1а, 2а, 2-5, 6а, 6-10, 11а, 11, 12а, 12-17, 18а, 18, 19а, 19б, 19-21, 22а, 22-24, 25а, 25-30, 32-34,
+                    37-42, 43а, 43, 44а, 44-56.</li>
+                    <li>вул. Прияружна: 1, 3, 5, 7, 9, 11, 11а, 13, 17, 21.</li>
+                    <li>вул. Синельниківська: 1а, 1, 2а, 2б, 2-47, 48а, 48, 51, 52а, 52-55, 56а, 56-59, 60а, 60, 61, 62, 63, 64, 65, 66, 67, 68,
+                    69, 70.</li>
+                    <li>вул. Славгородська: 3а, 3, 4а, 4, 5, 6а, 6-11, 12а, 12, 13, 15-17, 19, 21, 23а, 23, 25, 27-30, 31а, 31, 32, 34-45, 46а,
+                    46, 47а, 47-48, 50а, 50, 51а, 51-53, 54а, 54-57, 58-63, 64а, 64-74, 75а, 75-76, 78, 80, 82, 84, 86, 88, 90, 92, 94.</li>
+                    <li>вул. Софіївська: 2а, 2б, 2г, 4а, 6а, 6, 8, 10, 12, 14, 16, 18, 20а, 20, 22а, 22, 24а, 24, 26, 28, 30, 32, 34, 36, 38,
+                    40, 42, 44, 46, 48, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70.</li>
+                    <li>вул. Миколи Рибнікова: 1, 3, 7, 9, 28а.</li>
+                    <li>вул. Чернівецька: 4, 6, 8.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="info-wto">
+    <div class="container">
+        <div class="info-wto__title">
+            Основна інформація щодо навчального закладу
+        </div>
+        <div class="info-wto__wrap">
+            <div class="info-wto__img">
+                <img class="info-wto__img-school" src="../image/info-two-school.png" alt="">
+            </div>
+            <div class="info-wto__text">
+                <span>Зарахування учнів до навчального закладу здійснюється без проведення конкурсу і
+                як правило відповідно до території обслуговування.</span>
+                <span>Управління навчальним закладом здійснюється його засновником, органом
+                управління навчальним закладом.</span>
+                <span>Органом управління навчального закладу є Департамент освіти і науки Запорізької
+                міської ради та його відокремлений структурний підрозділ - територіальний відділ
+                освіти Заводського району департаменту освіти і науки Запорізької міської ради
+                відповідно до повноважень, визначених положенням про департамент освіти і
+                науки Запорізької міської ради та Положенням про ТВО.</span>
+                <span>Безпосереднє керівництво навчальним закладом здійснює його директор.
+                Директором може бути тільки громадянин України, який має вищу педагогічну освіту
+                на рівні спеціаліста або магістра, стаж педагогічної роботи не менш як три роки.</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="staff">
+    <div class="container">
+        <div class="staff__wrap">
+            <div class="staff__text staff__item">
+                <div class="staff__text-wrap">
+                    <div class="staff__text-title">
+                        Кадровий склад:
+                    </div>
+                    <div class="staff__text-list">
+                        <ul>
+                            <li>Відмінник освіти України - 2 чол.</li>
+                            <li>Старший вчитель - 5 чол.</li>
+                            <li>Вчитель вищої категорії - 7 чол.</li>
+                            <li>Вчитель першої категорії - 3 чол.</li>
+                            <li>Вчитель другої категорії - 4 чол.</li>
+                            <li>Спеціаліст - 9 чол.</li>
+                            <li>На 01.09.2019 вакантна посада - соціальний педагог (0,5 ставки),
+                                психолог (0,5 ставки), вчитель англійської мови (старша та середня школа).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="staff__img staff__item">
+                <img class="staff__img-girl" src="../image/staff-img.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="structure">
+    <div class="container">
+        <div class="structure__wrap">
+            <div class="structure__title">
+                Структура 2019/2020 навчального року
+            </div>
+            <div class="structure__text">
+                <span>Відповідно до ст. 16 Закону України «Про загальну середню освіту», на виконання наказу територіального відділу освіти
+                Заводського району</span>
+                <span>«Про підготовку та організований початок 2017/2018 навчального року» від 24.07.2017 № 284р</span>
+                <span>«Про підготовку та організований початок 2017/2018 навчального року» 2016/2017 навчальний рік розпочинається у День
+                знань – 1 вересня</span>
+            </div>
+            <div id="structure-slider" class="swiper-container structure-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide structure__slider-inner">
+                        <div class="structure__slide-title">
+                            Навчальні заняття в 2019/2020 навчальному році організовуються за семестровою системою:
+                        </div>
+                        <div class="structure__slider-text">
+                            <span>І семестр – з 02 вересня 2019 по 20 грудня 2019 року;</span>
+                            <span>ІІ семестр – з 13 січня 2020 по 29.05.2020 року.</span>
+                        </div>
+                        <div class="structure__slide-subtitle">
+                            Канікули (орієнтовно):
+                        </div>
+                        <div class="structure__slider-subtext">
+                            <span>осінні – з 28 жовтня по 3 листопада;</span>
+                            <span>зимові – з 21 грудня по 12 січня, (до школи 13 січня);</span>
+                            <span>весняні – з 21 березня по 291 квітня.</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide structure__slider-inner">
+                        <div class="structure__slide-title">
+                            Режим роботи закладу у 2019/2020 навчальному році п’ятиденний, заняття
+                            проводяться в одну зміну, тривалість уроків:
+                        </div>
+                        <div class="structure__slider-text">
+                            <span>у 1-х класах – по 35 хвилин;</span>
+                            <span>у 2 – 4-х класах – по 40 хвилин;</span>
+                            <span>у 5 – 11-х класах – по 45 хвилин.</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide structure__slider-inner">
+                        <div class="structure__slide-title">
+                            Початок занять о 08-00.
+                        </div>
+                        <div class="structure__slider-text">
+                            <span>Тривалість перерв:</span>
+                            <span>1 класи – 15 хвилин,</span>
+                            <span>2-11класи – 10 хвилин;</span>
+                            <span>велика перерва 20 хвилин після 2 та 3 уроків.</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide structure__slider-inner">
+                        <div class="structure__slide-title">
+                            Навчальні екскурсії та навчальна практика організовується відповідно до листів
+                            МОН України від 06.02.2008 № 1/9-61,
+                            від 11.06.2014 № 1/9-303 та на підставі рішення педагогічної ради від 02.06.2017 року:
+                        </div>
+                        <div class="structure__slider-text">
+                            <span>у 1-4 класах - в кінці навчального року;</span>
+                            <span>у 5-8, 10 класах - протягом навчального року.</span>
+                            <span>Програма навчальних екскурсій, навчальної практики та оцінювання визначається наказом по школі на початку навчального
+                            року.</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide structure__slider-inner">
+                        <div class="structure__slide-title">
+                            Закінчується навчальний рік проведенням річного оцінювання навчальних досягнень учнів усіх класів
+                            та державної підсумкової атестаціївипускників початкової, основної та старшої школи
+                            (не пізніше 01.07.2020 року).
+                        </div>
+                        <div class="structure__slider-text structure__slider-text-last">
+                            <span>Директор ЗЗОШ № 36</span>
+                            <span>І.І. Татарова</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="map">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5353.644111612944!2d35.1845875!3d47.8624094!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc6777c6908ca3%3A0xd4b03b8cf4efa5c3!2z0YjQutC-0LvQsCDihJYgMzY!5e0!3m2!1suk!2sua!4v1584030454114!5m2!1suk!2sua"
+        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrap">
+            <div class="footer__login">
+                <button class="footer__login-btn footer__login-entrance login-form">вхід</button>
+                <button class="footer__login-btn footer__login-registration registration-form">реєстрація</button>
+            </div>
+            <a class="footer__btn" href="#header-top"></a>
+        </div>
+    </div>
+</footer>
+
+<!-- <div id="recaptcha_mform-1_6LeoBwsUAA" class="g-recaptcha" data-sitekey="6LeoBwsUAAAAAGV3QlH5r2sW2jFtCqUEJwkHJ4BR"
+    data-theme="light" data-size="normal" rcid="0">
+    <div style="width: 304px; height: 78px;">
+        <div><iframe
+                src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LeoBwsUAAAAAGV3QlH5r2sW2jFtCqUEJwkHJ4BR&amp;co=aHR0cDovL3NjaG9vbC0zNi51Y296Lm5ldDo4MA..&amp;hl=uk&amp;v=qpy2aGtSgsYPZzCoYWjcaBCo&amp;theme=light&amp;size=normal&amp;cb=7vecpap7mkdy"
+                width="304" height="78" role="presentation" name="a-2tfnt6xnlug6" frameborder="0" scrolling="no"
+                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+        </div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+            style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+    </div><iframe style="display: none;"></iframe>
+</div> -->
+
+<div class="registration">
+    <div class="container">
+        <div class="registration__wrap">
+            <div class="registration__inner">
+                <div class="registration__title">
+                    Реєстрація
+                </div>
+                <form action="">
+                    <label for="email">Електронная пошта</label>
+                    <input type="text" placeholder="Введіть електронну пошту" name="email" required>
+                
+                    <label for="psw">Пароль</label>
+                    <input type="password" placeholder="Введіть пароль" name="psw" required>
+                
+                    <label for="psw-repeat">Повторіть пароль</label>
+                    <input type="password" placeholder="Введіть пароль" name="psw-repeat" required>
+                    <button type="submit" class="registration-btn">Продовжити</button>
+                </form>
+                <span class="registerform-close"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="login">
+    <div class="container">
+        <div class="login__wrap">
+            <div class="login__inner">
+                <div class="login__title">
+                    Вхід
+                </div>
+                <form action="">
+                    <label for="email">Електронная пошта</label>
+                    <input type="text" placeholder="Введіть електронну пошту" name="email" required>
+
+                    <label for="psw">Пароль</label>
+                    <input type="password" placeholder="Введіть пароль" name="psw" required>
+
+                    <button type="submit" class="login-btn">Продовжити</button>
+                </form>
+                <span class="loginform-close"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="order-hsa">
+    <div class="container">
+        <div class="order-hsa__wrap">
+            <div class="order-hsa__inner">
+                <img class="document-img" src="../image/document-img1.jpg" alt="Сторінка 1">
+                <img class="document-img" src="../image/document-img2.jpg"" alt=" Сторінка 2">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/all.js"></script>
+</body>
+</html>

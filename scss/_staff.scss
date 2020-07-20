@@ -1,0 +1,112 @@
+.staff{
+    min-height: 737px;
+    padding: 40px 0 40px 0;
+    &__wrap{
+        display: flex;
+    }
+    &__item{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__img{
+        position: relative;
+    }
+    // &__img:before{
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, 0);
+    //     content: "";
+    //     background-image: url("../image/staff-img.png");
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    //     width: 478px;
+    //     height: 667px;
+    // }
+    &__text{
+        padding: 0 30px;
+    }
+    &__text-wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 657px;
+        font-size: 24px;
+    }
+    &__text-title{
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 30px;
+        text-align: center;
+    }
+    &__text-list{
+        margin: 30px 0 0 0;
+    }
+    &__text ul{
+        margin: 0;
+        padding: 0;
+    }
+    &__text li{
+        margin: 0 0 20px 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+}
+
+@media (max-width: 839px){
+    .staff{
+        min-height: 437px;
+        &__wrap{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__img-girl{
+            max-width: 378px;
+            order: 1;
+            padding-top: 30px;
+        }
+        &__text {
+            order: 2;
+            width: 100%;
+        }
+        &__text-wrap{
+            min-height: 530px;
+        }
+    }
+}
+
+@media (max-width: 754px){
+    .staff {
+        min-height: 337px;
+        &__img-girl {
+            max-width: 278px;
+        }
+
+        &__text {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 610px){
+    .staff {
+        min-height: 337px;
+        &__wrap{
+            display: flex;
+            flex-direction: column;
+        }
+        &__img-girl {
+            max-width: 278px;
+        }
+        &__text {
+            margin-top: 20px;
+        }
+        &__item{
+            width: 100%;
+        }
+    }
+}

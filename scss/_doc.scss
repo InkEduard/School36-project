@@ -1,0 +1,132 @@
+.doc{
+    min-height: 688px;
+    &__wrap{
+        position: relative;
+        min-height: 688px;
+        width: 100%;
+        padding: 55px 0 84px 0;
+        
+    }
+    &__wrap:before{
+        position: absolute;
+        content: "";
+        background-image: url("../image/doc-img-bg.png");
+        top: 37px;
+        left: 73px;
+        background-repeat: no-repeat;
+        width: 432px;
+        height: 555px;
+    }
+    &__inner{
+        max-width: 729px;
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+    }
+    &__main{
+        font-size: 30px;
+        text-align: right;
+        text-transform: uppercase;
+    }
+    &__first-word,
+    &__main-author {
+        font-weight: bold;
+    }
+    &__main-author{
+        margin-top: 10px;
+        display: block;
+    }
+    &__list{
+        padding-left: 115px;
+    }
+    &__list ul{
+        margin-top: 64px;
+    }
+    &__list li{
+        margin-bottom: 30px;
+        color: #f2301c;
+    }
+    &__list li a{
+        color: #000;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    &__btn{
+        float: right;
+        max-width: 590px;
+        width: 100%;
+        background: #f2301c;
+        border: none;
+        border-radius: 7px;
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 29px 0;
+        margin-top: 26px;
+        color: #fff;
+        outline: none;
+        cursor: pointer;
+        line-height: 36px;
+    }
+    &__btn:hover{
+        background: #b92515;
+    }
+}
+
+@media (max-width: 1145px){
+    .doc{
+        min-height: 1200px;
+        &__wrap{
+            padding-top: 620px;
+            width: 100%;
+        }
+        &__wrap:before {
+            top: 37px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-repeat: no-repeat;
+            width: 432px;
+            height: 555px;
+        }
+        &__inner {
+            max-width: 729px;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto 0 auto;
+        }
+        &__list {
+            padding-left: 0;
+        }
+        &__list ul{
+            padding-left: 15px;
+        }
+        &__btn{
+            float: none;
+            max-width: 1170px;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 700px){
+    .doc__btn{
+        padding: 29px 15px 29px 15px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 539px){
+    .doc__main {
+        text-align: center;
+    }
+    .doc__main-author {
+        text-align: right;
+        display: block;
+    }
+}
+@media (max-width: 514px){
+    .doc__btn {
+        padding: 18px 15px 15px 15px;
+    }
+}

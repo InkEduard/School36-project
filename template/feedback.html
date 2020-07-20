@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./include/head.html')
+
+<body>
+    @@include('./include/header.html')
+
+<section class="feedback">
+    <div class="container">
+        <div class="feedback__wrap">
+            <div class="feedback__title">
+                ЗВОРОТНІЙ ЗВ’ЯЗОК
+            </div>
+            <div class="feedback__form-wrap">
+                <form action="">
+                    <label for="name">Ім`я відправника <span>*</span></label>
+                    <input class="feedback__input" type="text" placeholder="Введіть ім'я" name="name" required>
+                    
+                    <label for="email">E-mail відправника <span>*</span></label>
+                    <input class="feedback__input" type="text" placeholder="Введіть електронну пошту" name="email" required>
+
+                    <label for="site">Web-site</label>
+                    <input class="feedback__input" type="text" placeholder="Введіть сайт" name="site">
+
+                    <label for="theme">Тема листа</label>
+                    <input class="feedback__input" type="text" placeholder="Введіть тему" name="theme" required>
+
+                    <label for="message">Текст повідомлення <span>*</span></label>
+                    <textarea class="feedback__message" name="comment" placeholder="Залиште коментар" id="message" required></textarea>
+
+                    <label for="theme">Оцінка сайту</label>
+                    <select class="feedback__evaluation" name="theme">
+                        <option value="light">Відмінно</option>
+                        <option value="dark">Добре</option>
+                        <option value="light">Непогано</option>
+                        <option value="dark">Погано</option>
+                        <option value="dark">Жахливо</option>
+                    </select>
+
+                    <!-- <label class="feedback__security-code" for="security-code">Код безпеки <span>*</span></label>
+                    <input type="checkbox" required> -->
+
+                    <button type="submit" class="feedback-btn">Відправити</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    @@include('./include/footer.html')
+
+<div class="registration">
+    <div class="container">
+        <div class="registration__wrap">
+            <div class="registration__inner">
+                <div class="registration__title">
+                    Реєстрація
+                </div>
+                <form action="">
+                    <label for="email">Електронная пошта</label>
+                    <input type="text" placeholder="Введіть електронну пошту" name="email" required>
+
+                    <label for="psw">Пароль</label>
+                    <input type="password" placeholder="Введіть пароль" name="psw" required>
+
+                    <label for="psw-repeat">Повторіть пароль</label>
+                    <input type="password" placeholder="Введіть пароль" name="psw-repeat" required>
+                    <button type="submit" class="registration-btn">Відправити</button>
+                </form>
+                <span class="registerform-close"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="login">
+    <div class="container">
+        <div class="login__wrap">
+            <div class="login__inner">
+                <div class="login__title">
+                    Вхід
+                </div>
+                <form action="">
+                    <label for="email">Електронная пошта</label>
+                    <input type="text" placeholder="Введіть електронну пошту" name="email" required>
+
+                    <label for="psw">Пароль</label>
+                    <input type="password" placeholder="Введіть пароль" name="psw" required>
+
+                    <button type="submit" class="login-btn">Продовжити</button>
+                </form>
+                <span class="loginform-close"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/all.js"></script>
+</body>
+
+</html>
